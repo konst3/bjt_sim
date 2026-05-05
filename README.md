@@ -61,9 +61,6 @@ NOTE: We found the jacobean using the [utils/find_j.py](utils/find_j.py) script,
 ## Reports
 The requested reports can be found in the `reports/` directory:
 - [Project Report](reports/Project_Report.pdf): Detailed documentation of the project, design decisions, and implementation details.
-- [Panos Koutsoumanis Report](reports/Koutsoumanis_Personal_Report.pdf): Panos Koutsoumanis personal report.
-- [Konstantinos Papalamprou Report](reports/Papalamprou_Konstantinos_Personal_Report.pdf): Konstantinos Papalamprou personal report.
-- [Presentation](reports/Presentation.pdf): The presentation slides used for the project demonstration.
 
 ## Project Structure
 
