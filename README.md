@@ -9,6 +9,7 @@ A comprehensive Python application that implements the Newton-Raphson and the Bi
 - [Installation](#installation)
 - [Usage](#usage)
 - [Reports](#reports)
+- [LTspice Simulation](#ltspice-simulation)
 - [Project Structure](#project-structure)
 - [Contributors](#contributors)
 - [License](#license)
@@ -69,16 +70,15 @@ cd ../utils
 python find_j.py
 ```
 
-### Application Guide (also available in the UI)
-
-
+## LTspice Simulation
+We also implemented the same circuit in LTspice to compare the results. The LTspice simulation files can be found in the `ltspice/` directory: [BJT Simulation](ltspice/bjt_sim.asc).
+![ltspice](assets/ltspice.png)
 
 ## Reports
 The requested reports can be found in the `reports/` directory:
 - [Project Report](reports/Project_Report.pdf): Detailed documentation of the project, design decisions, and implementation details.
 
 ## Project Structure
-
 ```
 bjt_sim/
 ├── src/
@@ -89,17 +89,15 @@ bjt_sim/
 ```
 
 ## Contributors (with Github usernames)
-
-- **Konstantinos Papalamprou** (@konst3)
-- **Argo Papadopoulou**
-- **Thomas Tsekas**
-- **Adriana Vagena**
-- **Alexandros Voukelatos**
-- **Konstantinos Papadimas**
+- **Konstantinos Papalamprou** (@konst3) <-- Project Lead (python implementations, reports, and LTspice simulation)
+- **Argo Papadopoulou** <-- Bisection method implementation & reports
+- **Thomas Tsekas** <-- Bisection method math & reports
+- **Adriana Vagena** <-- Newton-Raphson method math & reports
+- **Alexandros Voukelatos** <-- LTspice simulation & reports
+- **Konstantinos Papadimas** <-- LTspice simulation & reports
 
 ## License
 This project is released into the public domain under The Unlicense. See the [LICENSE](LICENSE) file for more details.
 
 ## Resources
-
 The books in the exercise description were very helpful for understanding the numerical methods and their application to engineering problems. 
