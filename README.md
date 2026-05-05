@@ -19,7 +19,7 @@ A comprehensive Python application that implements the Newton-Raphson and the Bi
 
 - **Newton-Raphson Method Implementation** Python code: [src/bjt_sim.py](src/bjt_sim.py)
 
-- **Bisection Method** Python code: [src/bjt_sim.py](src/bjt_sim_bisection.py)
+- **Bisection Method** Python code: [src/bjt_sim_bisection.py](src/bjt_sim_bisection.py)
 
 - **Visualization of Results**: Graphical representation of the BJT characteristics and convergence behavior.
 ![plot](assets/V(R_2).png)
