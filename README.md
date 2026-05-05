@@ -1,6 +1,6 @@
 # 2nd Semester Project ECE upatras - BJT simulation
 
-A comprehensive Python application that implements the Newton-Raphson method to simulate the behavior of a Bipolar Junction Transistor (BJT) under various conditions. The project includes a visualization of results and a terminal-based user interface (check the [assets/exercise.pdf](assets/exercise.pdf) for the original exercise description).
+A comprehensive Python application that implements the Newton-Raphson and the Bisection to solve the non linear system of a BJT in  *exercise on page 96-101 of Numerical Methods for non-linear Engineering Models, John R. Hauser, Springer*. The project includes a visualization of results and a terminal-based user interface (check the [assets/exercise.pdf](assets/exercise.pdf) for the original exercise description).
 
 ## Table of Contents
 
@@ -16,19 +16,20 @@ A comprehensive Python application that implements the Newton-Raphson method to 
 
 ## Features
 
-- **Newton-Raphson Method Implementation**
+- **Newton-Raphson Method Implementation** Python code: [src/bjt_sim.py](src/bjt_sim.py)
 
-- **Bisection Method**
+- **Bisection Method** Python code: [src/bjt_sim.py](src/bjt_sim_bisection.py)
 
 - **Visualization of Results**: Graphical representation of the BJT characteristics and convergence behavior.
+![plot](assets/V(R_2).png)
 
 
 ## Requirements
 
 - Python 3.7+
 - numpy (for numerical computations)
-- scipy (for optimization and root finding) --> Only if you want to use the fsolve function for comparison, not required for the Newton-Raphson implementation
-- sympy (for symbolic mathematics, optional but useful for deriving equations) --> Only if you want to derive the equations symbolically, not required for the numerical implementation
+- scipy (for optimization and root finding) --> **Only** if you want to use the fsolve function for comparison, not required for the Newton-Raphson implementation
+- sympy (for symbolic mathematics, optional but useful for deriving equations) --> **Only** if you want to derive the equations symbolically, not required for the numerical implementation
 - matplotlib (for visualization)
 
 ## Installation
@@ -49,10 +50,24 @@ pip install -r requirements.txt
 Run the application from the project directory:
 
 ```bash
-cd src && python3 main.py
+cd src
 ```
 
-NOTE: We found the jacobean using the [utils/find_j.py](utils/find_j.py) script, which uses sympy to derive the jacobean matrix symbolically. You can run it to see how we derived the jacobean, but it's not required for the main application.
+- To run the Newton-Raphson method:
+```bash
+python bjt_sim.py
+```
+
+- To run the Bisection method:
+```bash
+python bjt_sim_bisection.py
+```
+
+NOTE: We found the jacobean using the [utils/find_j.py](utils/find_j.py) script, which uses sympy to derive the jacobean matrix symbolically. You can run it to see how we derived the jacobean, but it's not required for the main application. But to run:
+```bash
+cd ../utils
+python find_j.py
+```
 
 ### Application Guide (also available in the UI)
 
@@ -68,6 +83,7 @@ The requested reports can be found in the `reports/` directory:
 bjt_sim/
 ├── src/
 │   ├── bjt_sim.py
+│   ├── bjt_sim_bisection.py
 ├── utils/
 │   ├── find_j.py
 ```
@@ -75,9 +91,15 @@ bjt_sim/
 ## Contributors (with Github usernames)
 
 - **Konstantinos Papalamprou** (@konst3)
+- **Argo Papadopoulou**
+- **Thomas Tsekas**
+- **Adriana Vagena**
+- **Alexandros Voukelatos**
+- **Konstantinos Papadimas**
 
 ## License
 This project is released into the public domain under The Unlicense. See the [LICENSE](LICENSE) file for more details.
 
 ## Resources
 
+The books in the exercise description were very helpful for understanding the numerical methods and their application to engineering problems. 
