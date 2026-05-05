@@ -10,8 +10,6 @@ A comprehensive Python application that implements the Newton-Raphson method to 
 - [Usage](#usage)
 - [Reports](#reports)
 - [Project Structure](#project-structure)
-- [Algorithm Complexity](#algorithm-complexity)
-- [To-Do List](#to-do-list)
 - [Contributors](#contributors)
 - [License](#license)
 - [Resources](#resources)
